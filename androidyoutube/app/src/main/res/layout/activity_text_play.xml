@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context="com.example.android.androidyoutube.TextPlay">
+
+    <EditText
+        android:id="@+id/edCmd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type command"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/btnCmd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            tools:text="Enter"/>
+        <ToggleButton
+            android:id="@+id/togCmd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:checked="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Invalid"/>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">devLyf</string>
+    <string name="story_all">All Stories</string>
+    <string name="story_top">Top Stories</string>
+    <string name="story_following">Following</string>
+    <string name="story_projects">Projects</string>
+</resources>

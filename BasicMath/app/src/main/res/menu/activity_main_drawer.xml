@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/addition"
+            android:title="Addition"/>
+        <item
+            android:id="@+id/subtraction"
+            android:title="Subtraction"/>
+        <item
+            android:id="@+id/multiplication"
+            android:title="Multiplication"/>
+        <item
+            android:id="@+id/division"
+            android:title="Division"/>
+        <item
+            android:id="@+id/squareRoot"
+            android:title="Squareroot"/>
+        <item
+            android:id="@+id/square"
+            android:title="Square"/>
+        <item
+            android:id="@+id/cubeRoot"
+            android:title="Cuberoot"/>
+        <item
+            android:id="@+id/cube"
+            android:title="Cube"/>
+        <item
+            android:id="@+id/divisibilityTest"
+            android:title="Divisibility Test"/>
+        <item
+            android:id="@+id/fractions"
+            android:title="Division"/>
+        <item
+            android:id="@+id/rounding"
+            android:title="Rounding"/>
+    </group>
+
+
+
+</menu>

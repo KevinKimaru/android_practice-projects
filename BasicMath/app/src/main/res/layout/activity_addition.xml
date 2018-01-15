@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kevin.com.basicmath.AdditionActivity">
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/number1"
+        android:layout_alignStart="@+id/number1"
+        android:layout_below="@+id/number1"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/number2"
+        android:layout_alignRight="@+id/number2"
+        android:layout_below="@+id/number2"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="92dp"
+        android:text="Equals"/>
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/equals"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/equals"
+        android:layout_marginBottom="53dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Result"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/answer"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/answer"
+        android:text="Questions"/>
+</RelativeLayout>

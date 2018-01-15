@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.androidyoutube.Send">
+
+
+    <TextView
+        android:id="@+id/tvQues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kevin is ..."/>
+
+    <RadioGroup
+        android:id="@+id/rgAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rCrazy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Crazy"/>
+
+        <RadioButton
+            android:id="@+id/rWise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wise"/>
+
+        <RadioButton
+            android:id="@+id/rBoth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Both"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"/>
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"/>
+</LinearLayout>

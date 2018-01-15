@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AutoCompleteText</string>
+
+    <string-array name="list_of_countries">
+        <item>Kenya</item>
+        <item></item>
+        <item>Uganda</item>
+        <item>Tanzania</item>
+        <item>Rwanda</item>
+        <item>Burundi</item>
+        <item>Sudan</item>
+        <item>Somalia</item>
+        <item>Sweden</item>
+        <item>SouthAfrica</item>
+        <item>Ethiopia</item>
+        <item>DRC</item>
+        <item>Mozambique</item>
+    </string-array>
+</resources>

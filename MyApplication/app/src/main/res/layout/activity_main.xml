@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.kevin.testscanvasdrawables.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/increment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table"
+            android:gravity="center"
+            android:padding="32dp"
+            android:text="Hello World!\n Hello world \n Hello world \n Hello World \n Hello world\n"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:padding="32dp"
+            android:text="Hello World!\n Hello world \n Hello world \n Hello World \n Hello world\n"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/strokepre"
+            android:gravity="center"
+            android:padding="32dp"
+            android:text="Hello World!\n Hello world \n Hello world \n Hello World \n Hello world\n"/>
+
+        <Button
+            android:id="@+id/goToCanvas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/strokepre"
+            android:text="Go To Canvas"
+            android:textAllCaps="false"
+            android:onClick="goToCanvas"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/goToViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/strokepre"
+            android:text="Go To other Canvas"
+            android:textAllCaps="false"
+            android:onClick="goToOtherCanvas"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

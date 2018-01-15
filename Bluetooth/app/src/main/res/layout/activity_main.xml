@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kevin.bluetooth.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/on"
+            android:onClick="on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn On"/>
+
+        <Button
+            android:id="@+id/off"
+            android:onClick="off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn Off"/>
+
+        <Button
+            android:id="@+id/visible"
+            android:onClick="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visible?"/>
+
+        <Button
+            android:id="@+id/list"
+            android:onClick="list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show devices"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"/>
+
+        <Button
+            android:id="@+id/capture"
+            android:onClick="capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture Image"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Do the Math</string>
+    <string name="help_info">You do the math! is an arithmetic game. \n\n Choose Easy,
+        Medium or Hard level to begin.\n\n Answer the question by typing on the number pad displayed
+        and pressing enter. Press the C button to clear the existing answer. Each question may be
+        an addition subtraction or division. \n\n Your ten best scores will automatically
+        be saved into the HighScores.
+    </string>
+</resources>

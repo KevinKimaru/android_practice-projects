@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SettingsTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">#ff7788</item>
+    </style>
+
+    <style name="Play">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#8ff88f</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="ArtWork">
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+</resources>

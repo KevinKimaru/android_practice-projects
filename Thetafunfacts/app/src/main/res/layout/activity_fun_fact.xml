@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#51B46D"
+    android:padding="50dp"
+    android:paddingBottom="50dp"
+    android:paddingEnd="50dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingStart="50dp"
+    android:paddingTop="50dp"
+    android:id="@+id/relativeLayout"
+    tools:context="com.example.kevinkimaruchege.thetafunfacts.funFactActivity">
+
+    <TextView
+        android:id="@+id/funFact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif"
+        android:text="Did you know?"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:textAllCaps="false"
+        android:textColor="#80ffffff"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/factTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/funFact"
+        android:layout_marginTop="153dp"
+        android:text="Ants stretch in the morning when they wake up"
+        android:textAlignment="textStart"
+        android:layout_gravity="start"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <Button
+        android:id="@+id/showFactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:text="Show another fun fact"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+</RelativeLayout>

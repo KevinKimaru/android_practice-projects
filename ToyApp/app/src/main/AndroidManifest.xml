@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.kevin.toyapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- COMPLETED (1) Add the correct permission to access the DroidTermsExample content provider -->
+    <uses-permission android:name="com.example.udacity.droidtermsexample.TERMS_READ"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ScrollToys">
+        </activity>
+        <activity android:name=".Layout">
+        </activity>
+        <activity android:name=".Internet">
+        </activity>
+        <activity android:name=".Recycler">
+        </activity>
+        <activity android:name=".Intents">
+        </activity>
+        <activity android:name=".ChildActivity">
+        </activity>
+        <activity
+            android:name=".VisualizerActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".WebPages">
+        </activity>
+        <activity android:name=".Lifecycle">
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/action_settings"
+            android:parentActivityName=".VisualizerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".VisualizerActivity"/>
+        </activity>
+        <activity android:name=".Waitlist">
+        </activity>
+        <activity android:name=".ContProviders">
+        </activity>
+        <activity android:name=".TodoList">
+        </activity>
+        <activity android:name=".AddTaskActivity">
+        </activity>
+        <activity android:name=".BoardingPass">
+        </activity>
+        <activity
+            android:name=".HydrationReminder"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- COMPLETED (3) Register the TaskContentProvider -->
+        <!-- COMPLETED (4) Set name, authorities, and exported attributes -->
+        <!-- exported = false limits access to this ContentProvider to only this app -->
+        <provider
+            android:name=".dataTodo.TaskContentProvider"
+            android:authorities="com.kevin.toyapp"
+            android:exported="false"/>
+
+        <service
+            android:name=".sync.WaterReminderIntentService"
+            android:exported="false"/>
+        <service
+            android:name=".sync.WaterReminderFirebaseJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

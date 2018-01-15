@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kevin.com.passwords.LoginActivity">
+
+    <Button
+        android:id="@+id/phone_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="177dp"
+        android:onClick="onPhoneLogin"
+        android:text="Login with phone number"/>
+
+    <Button
+        android:id="@+id/email_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phone_login"
+        android:layout_alignStart="@+id/phone_login"
+        android:layout_below="@+id/phone_login"
+        android:layout_marginTop="91dp"
+        android:onClick="onEmailLogin"
+        android:text="login with email"/>
+</RelativeLayout>

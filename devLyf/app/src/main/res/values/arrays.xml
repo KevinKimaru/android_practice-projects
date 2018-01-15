@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_story">
+        <item>@string/story_all</item>
+        <item>@string/story_top</item>
+        <item>@string/story_following</item>
+        <item>@string/story_projects</item>
+    </string-array>
+</resources>

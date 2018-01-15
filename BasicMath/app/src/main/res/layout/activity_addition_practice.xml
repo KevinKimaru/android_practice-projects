@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kevin.com.basicmath.AdditionPracticeActivity">
+
+    <TextView
+        android:id="@+id/number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:text="Number1"/>
+
+    <TextView
+        android:id="@+id/number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/number1"
+        android:layout_alignStart="@+id/number1"
+        android:layout_below="@+id/number1"
+        android:layout_marginTop="81dp"
+        android:text="Number2"/>
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:ems="10"
+        android:hint="Answer"
+        android:inputType="number"
+        android:layout_below="@+id/number2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/number2"
+        android:layout_alignStart="@+id/number2"
+        android:layout_below="@+id/answer"
+        android:layout_marginTop="56dp"
+        android:text="Score"/>
+
+    <TextView
+        android:id="@+id/winLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/number2"
+        android:layout_alignRight="@+id/number2"
+        android:layout_below="@+id/score"
+        android:layout_marginTop="43dp"
+        android:text="Win or Lost"/>
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/winLose"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/winLose"
+        android:text="Restart"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/answer"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/restart"
+        android:layout_toRightOf="@+id/restart"
+        android:text="Submit"/>
+
+</RelativeLayout>
